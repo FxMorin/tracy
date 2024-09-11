@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install dependencies
-      run: apt install build-essential libdbus-1-dev libfreetype-dev libtbb-dev libglfw3-dev freetype2 tbb debuginfod dbus libxkbcommon libglvnd meson cmake git nodejs
+      run: sudo apt install build-essential libdbus-1-dev libfreetype-dev libtbb-dev libglfw3-dev freetype2 tbb debuginfod dbus libxkbcommon libglvnd meson cmake git nodejs
     - uses: actions/checkout@v4
     - name: Profiler GUI
       run: |
