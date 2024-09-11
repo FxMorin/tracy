@@ -58,7 +58,7 @@ jobs:
         cmake --build test/build --parallel
         rm -rf test/build
     - name: Find Artifacts
-      id: find_artifacts
+      id: find_artifacts 
       run: |
         mkdir -p bin
         cp profiler/build/tracy-profiler bin
