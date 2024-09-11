@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: archlinux:base-devel
     steps:
     - name: Install dependencies
       run: pacman -Syu --noconfirm && pacman -S --noconfirm --needed freetype2 tbb debuginfod dbus libxkbcommon libglvnd meson cmake git nodejs
