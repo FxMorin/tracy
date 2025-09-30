@@ -3,6 +3,8 @@ name: linux
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 env:
   CPM_SOURCE_CACHE: ${{ github.workspace }}/cpm-cache
